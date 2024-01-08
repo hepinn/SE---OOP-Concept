@@ -81,7 +81,13 @@ int main()
              break;
 
             }
-            
+            	cout<<"Would you like to order anything else? Y / N:";
+			cin>>gotostart;
+			if(gotostart=='Y' || gotostart=='y')
+			{
+			  goto beginning;
+			  return 0;
+			}
         }
 
      }
@@ -135,7 +141,13 @@ int main()
 
 
             }
-           
+           	cout<<"Would you like to order anything else? Y / N:";
+			cin>>gotostart;
+			if(gotostart=='Y' || gotostart=='y')
+			{
+			  goto beginning;
+			  return 0;
+			}
 
  }
 }
@@ -186,6 +198,13 @@ int main()
 
 
             }
+            	cout<<"Would you like to order anything else? Y / N:";
+			cin>>gotostart;
+			if(gotostart=='Y' || gotostart=='y')
+			{
+			  goto beginning;
+			  return 0;
+			}
             
             }
             }
@@ -238,6 +257,13 @@ int main()
 
 
             }
+            cout<<"Would you like to order anything else? Y / N:";
+			cin>>gotostart;
+			if(gotostart=='Y' || gotostart=='y')
+			{
+			  goto beginning;
+			  return 0;
+			}
 
  }
 }
@@ -288,8 +314,30 @@ int main()
 
 
             }
+           	cout<<"Would you like to order anything else? Y / N:";
+			cin>>gotostart;
+			if(gotostart=='Y' || gotostart=='y')
+			{
+			  goto beginning;
+			  return 0;
+			}
         }
     }
+    	else
+			{
+				system("CLS");
+				cout<<"Please Select Right Option: \n";
+				cout<<"Would You like to Start the program again? Y / N: " ;
+				cin>>gotostart;
+
+				if(gotostart=='Y' || gotostart=='y')
+				{
+				  goto beginning;
+			  return 0;
+			}
+			}
+
+
 }
 
     
